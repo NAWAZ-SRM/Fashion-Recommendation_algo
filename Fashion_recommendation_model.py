@@ -268,8 +268,6 @@ print(f"Execution Time for KNN with Ball Tree: {time.time() - start_time} second
 
 
 
-# Assuming 'image_features' is already loaded from 'Images_features.pkl'
-# and 'filenames' is loaded from 'filenames.pkl'
 
 # Perform KMeans clustering on image features
 n_clusters = 10  # You can adjust this number based on your dataset
@@ -286,7 +284,7 @@ cluster_assignments = kmeans.labels_
 
 print(f"Execution Time for KMeans: {time.time() - start_time} seconds")
 
-# Perform PCA for 2D visualization (if not already done)
+# Perform PCA for 2D visualization 
 pca = PCA(n_components=2)
 pca_result = pca.fit_transform(Image_features)
 
